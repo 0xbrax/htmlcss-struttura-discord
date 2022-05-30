@@ -1,12 +1,72 @@
 * {
     padding: 0;
-    margin, 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    max-width: 1170px;
-    margin: auto;
     font-family: 'whitney', 'sans-serif';
 }
 
+.nav-container {
+        padding: 10px;
+}
+
+.nav-container > nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+}
+
+nav > div {
+    padding: 5px;
+}
+
+.header-logo {
+    width: 30%;
+}
+
+.header-link {
+    width: 10%;
+    text-align: center;
+}
+
+.header-login {
+    width: 30%;
+    text-align: right;
+}
+
+.header-bottom {
+    padding: 30px 10px;
+}
+
+.hd-bt-container {
+    height: 300px;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/* debug class per layout */
+
+.debug header .nav-container {
+    background-color: #ADD8E6;
+}
+
+.debug nav div {
+    background-color: #DAA520;
+    border: 1.5px dashed black;
+}
+
+.debug header .header-bottom {
+    background-color: #00008B;
+}
+
+.debug .header-bottom .hd-bt-container {
+    background-color: #EE82EE;
+}
