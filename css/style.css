@@ -9,30 +9,36 @@ body {
 }
 
 .nav-container {
-        padding: 10px;
+    padding: 10px;
 }
 
 .nav-container > nav {
     max-width: 800px;
     margin: auto;
     display: flex;
+    justify-content: space-between;
 }
 
-nav > div {
+nav > div, nav > ul {
     padding: 5px;
+    flex-grow: 1;
 }
 
 .header-logo {
-    width: 30%;
 }
 
 .header-link {
-    width: 10%;
+    list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.link-item {
+    margin: 0 10px;
 }
 
 .header-login {
-    width: 30%;
     text-align: right;
 }
 
@@ -58,7 +64,7 @@ nav > div {
     background-color: #ADD8E6;
 }
 
-.debug nav div {
+.debug nav div, .debug nav ul {
     background-color: #DAA520;
     border: 1.5px dashed black;
 }
